@@ -27,10 +27,10 @@ server '107.170.84.102', user: 'deployer', roles: %w{web app}, my_property: :my_
 # --------------
   set :ssh_options, {
     #keys: %w(/home/rlisowski/.ssh/id_rsa),
-    forward_agent: false,
-    auth_methods: %w(password),
+    forward_agent: true,
+    #auth_methods: %w(password),
     password: '0nly0ne',
-    user: 'deployer',
+    user: 'dearboy15',
   }
 #
 # And/or per server (overrides global)
